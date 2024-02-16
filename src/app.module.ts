@@ -21,14 +21,14 @@ import { BullMQAdapter } from "@bull-board/api/bullMQAdapter";
       },
     }),
     BullModule.registerQueue({
-      name: 'salesforce-events',
+      name: 'account-update',
     }),
     BullBoardModule.forRoot({
       route: '/queues',
       adapter: ExpressAdapter,
     }),
     BullBoardModule.forFeature({
-      name: 'salesforce-events',
+      name: 'account-update',
       adapter: BullMQAdapter, //or use BullAdapter if you're using bull instead of bullMQ
     }),
   ],
