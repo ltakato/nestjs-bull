@@ -7,7 +7,7 @@ import { BullModule } from '@nestjs/bull';
 import { BullBoardModule } from '@bull-board/nestjs';
 import { SalesforceEventsConsumerService } from './salesforce-events-consumer/salesforce-events-consumer.service';
 import { ExpressAdapter } from '@bull-board/express';
-import { BullMQAdapter } from "@bull-board/api/bullMQAdapter";
+import { BullMQAdapter } from '@bull-board/api/bullMQAdapter';
 
 @Module({
   imports: [
